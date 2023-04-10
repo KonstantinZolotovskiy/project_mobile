@@ -13,7 +13,7 @@ public class MainPage {
             settingsButton = $(id("org.wikipedia.alpha:id/main_drawer_settings_container")),
             settingsTitle = $(id("org.wikipedia.alpha:id/action_bar"));
 
-    @Step
+    @Step("Проверка доступности страницы \"Settings\"")
     public void checkSettings() {
         moreButton.shouldBe(visible).click();
         settingsButton.shouldBe(visible).click();
