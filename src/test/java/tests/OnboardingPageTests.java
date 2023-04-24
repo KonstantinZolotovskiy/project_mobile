@@ -4,9 +4,9 @@ import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+@Owner("Konstantin Zolotovskiy")
 public class OnboardingPageTests extends TestBase {
     @Test
-    @Owner("Konstantin Zolotovskiy")
     @DisplayName("Проверка текста вводных страниц")
     void gettingStartedTest() {
         String firstPageText = "The Free Encyclopedia";
@@ -24,14 +24,12 @@ public class OnboardingPageTests extends TestBase {
     }
 
     @Test
-    @Owner("Konstantin Zolotovskiy")
     @DisplayName("Проверка кнопки \"SKIP\"")
     void skipButtonTest() {
         onboardingPage.skipAndCheck();
     }
 
     @Test
-    @Owner("Konstantin Zolotovskiy")
     @DisplayName("Проверка возможности добавления языков")
     void addLanguageTest() {
         onboardingPage.checkAddOrEditLanguages();
