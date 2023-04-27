@@ -9,16 +9,12 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
-import pages.MainPage;
-import pages.OnboardingPage;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.logevents.SelenideLogger.addListener;
 
 public class TestBase {
-    OnboardingPage onboardingPage = new OnboardingPage();
-    MainPage mainPage = new MainPage();
 
     public static String deviceHost = System.getProperty("deviceHost");
 
