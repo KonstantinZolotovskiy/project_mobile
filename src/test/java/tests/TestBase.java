@@ -25,7 +25,6 @@ public class TestBase {
                 Configuration.browser = BrowserstackMobileDriver.class.getName();
                 break;
             case "emulation":
-            case "real":
                 Configuration.browser = LocalMobileDriver.class.getName();
                 break;
             default:
